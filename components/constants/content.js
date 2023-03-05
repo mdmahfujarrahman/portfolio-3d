@@ -4,7 +4,6 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
@@ -14,16 +13,16 @@ import {
     mongodb,
     git,
     figma,
-    docker,
+    nextjs,
     meta,
     starbucks,
     tesla,
     shopify,
     carrent,
     jobit,
-    tripguide,
-    threejs,
-} from "../../assets";
+    tripguides,
+    bootstrap,
+} from "../../assets/index";
 
 export const navLinks = [
     {
@@ -73,10 +72,6 @@ const technologies = [
         icon: javascript,
     },
     {
-        name: "TypeScript",
-        icon: typescript,
-    },
-    {
         name: "React JS",
         icon: reactjs,
     },
@@ -89,6 +84,10 @@ const technologies = [
         icon: tailwind,
     },
     {
+        name: "Bootstrap",
+        icon: bootstrap,
+    },
+    {
         name: "Node JS",
         icon: nodejs,
     },
@@ -97,8 +96,8 @@ const technologies = [
         icon: mongodb,
     },
     {
-        name: "Three JS",
-        icon: threejs,
+        name: "Next JS",
+        icon: nextjs,
     },
     {
         name: "git",
@@ -107,10 +106,6 @@ const technologies = [
     {
         name: "figma",
         icon: figma,
-    },
-    {
-        name: "docker",
-        icon: docker,
     },
 ];
 
@@ -198,9 +193,9 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Ahmed Auto Parts",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Web-based platform that allows users to search for auto parts, view estimated prices for parts, and locate available parts based on their current location.",
         tags: [
             {
                 name: "react",
@@ -216,19 +211,41 @@ const projects = [
             },
         ],
         image: carrent,
-        source_code_link: "https://github.com/",
+        source_code_link:
+            "https://github.com/mdmahfujarrahman/ahmed-auto-parts",
     },
     {
-        name: "Job IT",
+        name: "NFT Marketplace",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Web application that allows users to buy and sell NFTs. Users can also create their own NFTs and sell them on the platform.",
         tags: [
             {
-                name: "react",
+                name: "Nextjs",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "solidity",
+                color: "green-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: jobit,
+        source_code_link: "https://github.com/mdmahfujarrahman/nft-project",
+    },
+    {
+        name: "Home Improvement Blog",
+        description:
+            "Web application that allows users to read articles about home improvement and share their own experiences.",
+        tags: [
+            {
+                name: "React",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Mysql",
                 color: "green-text-gradient",
             },
             {
@@ -237,28 +254,8 @@ const projects = [
             },
         ],
         image: jobit,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Trip Guide",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "supabase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        source_code_link:
+            "https://github.com/mdmahfujarrahman/Home-improvment-blog",
     },
 ];
 

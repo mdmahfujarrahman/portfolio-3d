@@ -8,12 +8,11 @@ import {
     useTexture,
 } from "@react-three/drei";
 
-import CanvasLoader from "../Loader/Loader";
+import CanvasLoader from "../../UI/Loader/Loader";
 
 const Ball = (props) => {
-    
-    const [decal] = useTexture([props.imgUrl]);
-
+    debugger;
+    const [decal] = useTexture([props.imgUrl.src]);
     return (
         <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
             <ambientLight intensity={0.25} />
@@ -39,6 +38,8 @@ const Ball = (props) => {
 };
 
 const BallCanvas = ({ icon }) => {
+    console.log(icon);
+    debugger;
     return (
         <Canvas
             frameloop="demand"

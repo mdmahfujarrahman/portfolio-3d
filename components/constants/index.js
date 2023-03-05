@@ -9,6 +9,8 @@ import Work from "../Work/Work.jsx";
 import ComputersCanvas from "../Computers/Computers.jsx";
 import ServiceCard from "../ServiceCard/ServiceCard.jsx";
 import ExperienceCard from "../ExperienceCard/ExperienceCard.jsx";
+import ProjectCard from "../ProjectCard/ProjectCard.jsx";
+import TestimonialsCard from "../TestimonialsCard/TestimonialsCard.jsx";
 
 export {
     About,
@@ -22,4 +24,6 @@ export {
     ComputersCanvas,
     ServiceCard,
     ExperienceCard,
+    ProjectCard,
+    TestimonialsCard,
 };
