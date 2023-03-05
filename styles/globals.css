@@ -19,10 +19,32 @@
     display: block;
 }
 
-
 .imageRounded {
     border-radius: 50%;
 }
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader-style {
+    font-size: 14px;
+    color: #f1f1f1;
+    font-weight: 800;
+    margin-top: 40px;
+}
+.loader-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.company-title {
+    margin: 0 !important;
+}
+
 .black-gradient {
     background: #000000; /* fallback for old browsers */
     background: -webkit-linear-gradient(
