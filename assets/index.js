@@ -13,6 +13,7 @@ import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
+import typescript from "./tech/typescript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
@@ -24,6 +25,9 @@ import threejs from "./tech/threejs.svg";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
+import localSEO from "./company/localSEO.png";
+import infyney from "./company/infyney.png";
+import kyloapps from "./company/kyloapps.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
@@ -45,6 +49,7 @@ export {
     git,
     html,
     javascript,
+    typescript,
     mongodb,
     nodejs,
     reactjs,
@@ -55,6 +60,9 @@ export {
     meta,
     shopify,
     starbucks,
+    localSEO,
+    infyney,
+    kyloapps,
     tesla,
     carrent,
     jobit,

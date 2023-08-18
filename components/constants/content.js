@@ -4,6 +4,7 @@ import {
     creator,
     web,
     javascript,
+    typescript,
     html,
     css,
     reactjs,
@@ -15,8 +16,9 @@ import {
     figma,
     nextjs,
     meta,
-    starbucks,
-    tesla,
+    localSEO,
+    infyney,
+    kyloapps,
     shopify,
     carrent,
     jobit,
@@ -41,7 +43,7 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Full Stack Developer",
         icon: web,
     },
     {
@@ -49,7 +51,7 @@ const services = [
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "Local SEO Specialist",
         icon: backend,
     },
     {
@@ -70,6 +72,10 @@ const technologies = [
     {
         name: "JavaScript",
         icon: javascript,
+    },
+    {
+        name: "TypeScript",
+        icon: typescript,
     },
     {
         name: "React JS",
@@ -111,55 +117,53 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Local SEO Specialist",
+        company_name: "Local SEO Help, Fivarr, Upwork",
+        icon: localSEO,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "March 2016 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Help clients to rank their business on google map pack and organic search result.",
+            "Improving the quality of the website and content to rank on google.",
+            "Helping clients to get more reviews on google.",
+            "Helping clients to get more backlinks from high authority websites.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Full Stack Developer - Internship",
+        company_name: "Infyney",
+        icon: infyney,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: "Jun 2022 - Jul 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Work on keycloak authentication and authorization.",
+            "Authentication and authorization using keycloak.",
+            "Explore keycloak and its features.",
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
+        title: "Full Stack Developer - Internship",
+        company_name: "KyloApps",
+        icon: kyloapps,
         iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        date: "Jul 2022 - Nov 2022",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        title: "Software Developer Engineer",
+        company_name: "KyloApps",
+        icon: kyloapps,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        date: "Dec 2023 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developing and maintaining web applications using React.js, Next.js and other related technologies.",
+            "Meeting both technical and consumer needs.",
+            "Motivating team members and assessing performance.",
+            "Building high-quality reusable code that can be used in the future.",
         ],
     },
 ];
