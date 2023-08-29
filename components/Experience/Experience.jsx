@@ -12,7 +12,7 @@ import { ExperienceCard } from "../constants";
 
 const Experience = () => {
     return (
-        <>
+        <div>
             <motion.div variants={textVariant()}>
                 <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
                     What I've done
@@ -25,13 +25,13 @@ const Experience = () => {
                 <VerticalTimeline>
                     {experiences.map((experience, index) => (
                         <ExperienceCard
-                            key={experience.title}
+                            key={experience.date}
                             experience={experience}
                         />
                     ))}
                 </VerticalTimeline>
             </div>
-        </>
+        </div>
     );
 };
 

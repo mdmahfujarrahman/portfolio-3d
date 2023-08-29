@@ -20,11 +20,13 @@ const About = () => {
                 variants={fadeIn("", "", 0.1, 1)}
                 className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
             >
-                Writing well-designed, testable, efficient code by using best
-                software development practices Creating website layout/user
-                interfaces by using standard HTML/CSS, JavaScript, and React.js
-                practices. Integrating data from various back-end services and
-                also i'm a quick learner.
+                Highly skilled and motivated Software Developer with a strong
+                background in writing well-designed, testable, and efficient
+                code, adhering to the best software development practices.
+                Proficient in creating captivating website layouts and intuitive
+                user interfaces by utilizing standard HTML, CSS, and JavaScript,
+                as well as expertise in building dynamic web applications using
+                React.js, Next.js, React Native and Node.js
             </motion.p>
             <div className="mt-20 flex flex-wrap gap-10">
                 {services.map((service, index) => (

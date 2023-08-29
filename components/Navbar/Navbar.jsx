@@ -1,14 +1,25 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 import { styles } from "../../styles/styles";
 import { logo, close, menu } from "../../assets/index";
 import { navLinks } from "../constants/content";
 
 const Navbar = () => {
+    const navRef = useRef();
     const [active, setActive] = useState("");
     const [toggle, setToggle] = useState(false);
+
+
+    const handleClick = useCallback(
+        (e) => {
+            if (e.target === navRef.current && toggle) {
+                setToggle(false);
+            }
+        },
+        [toggle, navRef]
+    );
 
     return (
         <nav
@@ -43,11 +54,25 @@ const Navbar = () => {
                             } hover:text-white text-[18px] font-medium cursor-pointer`}
                             onClick={() => setActive(link.title)}
                         >
-                            <a href={`#${link.id}`}>{link.title}</a>
+                            {link?.id === "Download" ? (
+                                <a
+                                    href={`${link?.link}`}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {link.title}
+                                </a>
+                            ) : (
+                                <a href={`#${link.id}`}>{link.title}</a>
+                            )}
                         </li>
                     ))}
                 </ul>
-                <div className="sm:hidden flex flex-1 justify-end items-center">
+                <div
+                    ref={navRef}
+                    onClick={handleClick}
+                    className="sm:hidden flex flex-1 justify-end items-center"
+                >
                     <Image
                         src={toggle ? close : menu}
                         alt="menu"
@@ -67,13 +92,23 @@ const Navbar = () => {
                                         active === link.title
                                             ? "text-white"
                                             : "text-secondary"
-                                    }  text-[16px] font-medium cursor-pointer font-poppins`}
+                                    }   text-[16px] font-medium cursor-pointer font-poppins `}
                                     onClick={() => {
                                         setActive(link.title);
                                         setToggle(!toggle);
                                     }}
                                 >
-                                    <a href={`#${link.id}`}>{link.title}</a>
+                                    {link?.id === "Download" ? (
+                                        <a
+                                            href={`${link?.link}`}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            {link.title}
+                                        </a>
+                                    ) : (
+                                        <a href={`#${link.id}`}>{link.title}</a>
+                                    )}
                                 </li>
                             ))}
                         </ul>

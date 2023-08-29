@@ -15,6 +15,7 @@ import {
     git,
     figma,
     nextjs,
+    reactNative,
     meta,
     localSEO,
     infyney,
@@ -32,12 +33,21 @@ export const navLinks = [
         title: "About",
     },
     {
+        id: "experience",
+        title: "Experience",
+    },
+    {
         id: "work",
         title: "Work",
     },
     {
         id: "contact",
         title: "Contact",
+    },
+    {
+        id: "Download",
+        title: "Download Resume",
+        link: "https://drive.google.com/file/d/1peyh2pJga0k1RiWH4fGFsQXHkcvTm4QD/view?usp=sharing",
     },
 ];
 
@@ -82,6 +92,18 @@ const technologies = [
         icon: reactjs,
     },
     {
+        name: "Next JS",
+        icon: nextjs,
+    },
+    {
+        name: "React Native",
+        icon: reactNative,
+    },
+    {
+        name: "Node JS",
+        icon: nodejs,
+    },
+    {
         name: "Redux Toolkit",
         icon: redux,
     },
@@ -94,16 +116,8 @@ const technologies = [
         icon: bootstrap,
     },
     {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
         name: "MongoDB",
         icon: mongodb,
-    },
-    {
-        name: "Next JS",
-        icon: nextjs,
     },
     {
         name: "git",
@@ -154,7 +168,7 @@ const experiences = [
         ],
     },
     {
-        title: "Software Developer Engineer",
+        title: "Full Stack Developer",
         company_name: "KyloApps",
         icon: kyloapps,
         iconBg: "#E6DEDD",
@@ -197,9 +211,9 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Ahmed Auto Parts",
+        name: "Mega Grain Trading",
         description:
-            "Web-based platform that allows users to search for auto parts, view estimated prices for parts, and locate available parts based on their current location.",
+            "It is a B2B platform where trading trading facility that introduces buyers and sellers globally to perform business operations in Agri commodities.",
         tags: [
             {
                 name: "react",
@@ -210,13 +224,12 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "redux",
                 color: "pink-text-gradient",
             },
         ],
         image: carrent,
-        source_code_link:
-            "https://github.com/mdmahfujarrahman/ahmed-auto-parts",
+        live_link: "https://megagrain-frontend.vercel.app/",
     },
     {
         name: "NFT Marketplace",
@@ -236,30 +249,32 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
+        image: tripguides,
         source_code_link: "https://github.com/mdmahfujarrahman/nft-project",
+        live_link: "https://nft-project-liart.vercel.app/",
     },
     {
-        name: "Home Improvement Blog",
+        name: "Ahmed Auto Parts",
         description:
-            "Web application that allows users to read articles about home improvement and share their own experiences.",
+            "Web-based platform that allows users to search for auto parts, view estimated prices for parts, and locate available parts based on their current location.",
         tags: [
             {
-                name: "React",
+                name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "Mysql",
+                name: "mongodb",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "tailwind",
                 color: "pink-text-gradient",
             },
         ],
         image: jobit,
         source_code_link:
             "https://github.com/mdmahfujarrahman/Home-improvment-blog",
+        live_link: "https://ahmed-auto-parts.web.app/",
     },
 ];
 

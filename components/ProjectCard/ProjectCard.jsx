@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import Tilt from "react-tilt";
 
-import { github } from "../../assets";
+import { github, website } from "../../assets";
 import { fadeIn } from "@/styles/Motion";
 import Image from "next/image";
 
 const ProjectCard = ({ project, index }) => {
-    debugger;
+   
     return (
         <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
             <Tilt
@@ -27,16 +27,33 @@ const ProjectCard = ({ project, index }) => {
                     <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
                         <div
                             onClick={() =>
-                                window.open(project.source_code_link, "_blank")
+                                window.open(project.live_link, "_blank")
                             }
-                            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-1"
                         >
                             <Image
-                                src={github}
-                                alt="source code"
+                                src={website}
+                                alt="Live Link"
                                 className="w-1/2 h-1/2 object-contain"
                             />
                         </div>
+                        {project.source_code_link && (
+                            <div
+                                onClick={() =>
+                                    window.open(
+                                        project.source_code_link,
+                                        "_blank"
+                                    )
+                                }
+                                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                            >
+                                <Image
+                                    src={github}
+                                    alt="source code"
+                                    className="w-1/2 h-1/2 object-contain"
+                                />
+                            </div>
+                        )}
                     </div>
                 </div>
 

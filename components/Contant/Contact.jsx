@@ -1,10 +1,12 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 
 import { slideIn } from "@/styles/Motion";
 import SectionWrapper from "../../HOC/SectionWrapper";
 import EarthCanvas from "../Earth/Earth";
+
+import axios from "axios";
+import { toast } from "react-hot-toast";
 
 const Contact = () => {
     const formRef = useRef();
@@ -26,46 +28,48 @@ const Contact = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
 
-        emailjs
-            .send(
-                process.env.NEXT_PUBLIC_SERVICE_ID,
-                process.env.NEXT_PUBLIC_TEMPLATE_ID,
-                {
-                    from_name: form.name,
-                    to_name: "Mahfujar Rahman",
-                    from_email: form.email,
-                    to_email: "ahmedmahfuj28@gamil.ocm",
-                    message: form.message,
-                },
-                process.env.NEXT_PUBLIC_PUBLIC_KEY
-            )
-            .then(
-                () => {
-                    setLoading(false);
-                    alert(
-                        "Thank you. I will get back to you as soon as possible."
-                    );
+        if (!form.name) {
+            toast.error("Name is required!");
+            setLoading(false);
+            return;
+        } else if (!form.email) {
+            toast.error("Email is required!");
+            setLoading(false);
+            return;
+        } else if (!form.message) {
+            toast.error("Message is required!");
+            setLoading(false);
+            return;
+        }
 
-                    setForm({
-                        name: "",
-                        email: "",
-                        message: "",
-                    });
-                },
-                (error) => {
-                    setLoading(false);
-                    console.error(error);
+        try {
+            const res = await axios.post("/api/contact", form);
+            if (res.status === 200) {
+                toast.success(res.data.message);
+                setLoading(false);
+                setForm({
+                    name: "",
+                    email: "",
+                    message: "",
+                });
+            }
+        } catch (error) {
+            if (error.response.status === 429) {
+                toast.error("Too many requests, please try again later!");
+            } else {
+                toast.error(error.response.data.message);
+            }
 
-                    alert("Ahh, something went wrong. Please try again.");
-                }
-            );
+            setLoading(false);
+        }
     };
     return (
         <div
+            id="contact"
             className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
         >
             <motion.div
@@ -105,8 +109,9 @@ const Contact = () => {
                             type="email"
                             name="email"
                             value={form.email}
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                             onChange={handleChange}
-                            placeholder="What's your web address?"
+                            placeholder="What's your email address?"
                             className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                         />
                     </label>
@@ -120,7 +125,7 @@ const Contact = () => {
                             value={form.message}
                             onChange={handleChange}
                             placeholder="What you want to say?"
-                            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium resize-none"
                         />
                     </label>
 

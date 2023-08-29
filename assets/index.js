@@ -3,6 +3,7 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
+import website from "./website.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -20,6 +21,7 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import bootstrap from "./tech/bootstarp.png";
+import reactNative from "./tech/react-native.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
@@ -40,6 +42,7 @@ export {
     creator,
     mobile,
     web,
+    website,
     github,
     menu,
     close,
@@ -53,6 +56,7 @@ export {
     mongodb,
     nodejs,
     reactjs,
+    reactNative,
     redux,
     tailwind,
     bootstrap,

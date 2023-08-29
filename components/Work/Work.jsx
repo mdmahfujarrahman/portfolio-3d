@@ -7,7 +7,7 @@ import { ProjectCard } from "../constants";
 
 const Work = () => {
     return (
-        <>
+        <div id="work">
             <motion.div variants={textVariant()}>
                 <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
                     My Work
@@ -29,7 +29,7 @@ const Work = () => {
                     projects effectively.
                 </motion.p>
             </div>
-            <div className="mt-20 flex flex-warp gap-7">
+            <div className="mt-20 flex flex-col md:flex-row flex-warp gap-7">
                 {projects.map((project, index) => (
                     <ProjectCard
                         key={project.name}
@@ -38,7 +38,7 @@ const Work = () => {
                     />
                 ))}
             </div>
-        </>
+        </div>
     );
 };
 
