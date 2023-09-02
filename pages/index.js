@@ -1,4 +1,3 @@
-import FacebookPlagIn from "@/components/FacebookPlagIn/FacebookPlagIn";
 import {
     About,
     Banner,
