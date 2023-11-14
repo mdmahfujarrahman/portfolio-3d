@@ -53,6 +53,10 @@ const Home = () => {
             <Head>
                 <title>{metadata.title}</title>
                 <meta name="description" content={metadata.description} />
+                <meta
+                    name="google-site-verification"
+                    content="BnUudtDXlxXfB8IJ8_qK9JxsNo8em2UNt6-Xb7k-uRY"
+                />
                 {/* <script
                     dangerouslySetInnerHTML={{
                         __html: `
