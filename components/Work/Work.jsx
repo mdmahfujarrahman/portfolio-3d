@@ -9,7 +9,6 @@ import Cursor from "@/UI/Cursor/Cursor";
 const Work = () => {
     return (
         <div id="work">
-            <Cursor />
             <motion.div variants={textVariant()}>
                 <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
                     My Work
