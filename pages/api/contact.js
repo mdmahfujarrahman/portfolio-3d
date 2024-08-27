@@ -46,6 +46,7 @@ export default async function handler(req, res) {
         ]);
         res.status(200).json({ message: "Email sent successfully" });
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             error: "An error occurred while sending the email",
         });

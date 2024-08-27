@@ -100,9 +100,8 @@ const Navbar = () => {
                                 >
                                     {link?.id === "Download" ? (
                                         <a
-                                            href={`${link?.link}`}
-                                            target="_blank"
-                                            rel="noreferrer"
+                                            href={'../../assets/Mahfujar Rahman Resume - Full Stack Developer.pdf'}
+                                            download
                                         >
                                             {link.title}
                                         </a>

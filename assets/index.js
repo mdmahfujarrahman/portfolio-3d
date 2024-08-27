@@ -23,18 +23,21 @@ import tailwind from "./tech/tailwind.png";
 import bootstrap from "./tech/bootstarp.png";
 import reactNative from "./tech/react-native.png";
 import threejs from "./tech/threejs.svg";
+import docker from "./tech/docker.png";
+import sonarqube from "./tech/sonarqube.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
 import localSEO from "./company/localSEO.png";
 import infyney from "./company/infyney.png";
 import kyloapps from "./company/kyloapps.png";
+import seopage1 from "./company/seopage1.jpeg";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguides from "./tripguide.png";
+import aspireprop from "./aspireprop.png";
+import qrcode from "./qrcode.png";
+import nodejsapplication from "./nodejsapplication.png";
 
 export {
     logo,
@@ -52,7 +55,9 @@ export {
     git,
     html,
     javascript,
+    docker,
     typescript,
+    sonarqube,
     mongodb,
     nodejs,
     reactjs,
@@ -61,14 +66,15 @@ export {
     tailwind,
     bootstrap,
     threejs,
-    meta,
-    shopify,
-    starbucks,
     localSEO,
     infyney,
     kyloapps,
     tesla,
     carrent,
     jobit,
+    aspireprop,
+    nodejsapplication,
+    qrcode,
     tripguides,
+    seopage1
 };

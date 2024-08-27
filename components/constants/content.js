@@ -13,18 +13,21 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
+    docker,
+    sonarqube,
     nextjs,
     reactNative,
-    meta,
     localSEO,
     infyney,
     kyloapps,
-    shopify,
+    seopage1,
     carrent,
     jobit,
     tripguides,
     bootstrap,
+    aspireprop,
+    qrcode,
+    nodejsapplication
 } from "../../assets/index";
 
 export const navLinks = [
@@ -124,9 +127,13 @@ const technologies = [
         icon: git,
     },
     {
-        name: "figma",
-        icon: figma,
+        name: "Docker",
+        icon: docker,
     },
+    {
+        name: "SonarQube",
+        icon: sonarqube,
+    }
 ];
 
 const experiences = [
@@ -172,12 +179,25 @@ const experiences = [
         company_name: "KyloApps",
         icon: kyloapps,
         iconBg: "#E6DEDD",
-        date: "Dec 2023 - Present",
+        date: "Dec 2022 - Nov 2023",
         points: [
             "Developing and maintaining web applications using React.js, Next.js and other related technologies.",
             "Meeting both technical and consumer needs.",
             "Motivating team members and assessing performance.",
             "Building high-quality reusable code that can be used in the future.",
+        ],
+    },
+    {
+        title: "Jr. Frontend Developer",
+        company_name: "SEOPAGE1",
+        icon: seopage1,
+        iconBg: "#E6DEDD",
+        date: "Feb 2024 - Present",
+        points: [
+            "Developing and maintaining ERP software using React.js and other related technologies.",
+            "Complete Few Important modules of the ERP software (Auto Price Quotation, Sale Risk Analysis etc).",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
         ],
     },
 ];
@@ -210,6 +230,27 @@ const testimonials = [
 ];
 
 const projects = [
+    {
+        name: "Aspire Proptech",
+        description:
+            "Aspire Proptech is a one-stop destination for people seeking their dream home in Bangalore. It is a platform that connects buyers and sellers of real estate properties.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "redux toolkit",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Server Side Rendering",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: aspireprop,
+        live_link: "https://aspireprop.com/",
+    },
     {
         name: "Mega Grain Trading",
         description:
@@ -273,9 +314,54 @@ const projects = [
         ],
         image: jobit,
         source_code_link:
-            "https://github.com/mdmahfujarrahman/Home-improvment-blog",
-        live_link: "https://ahmed-auto-parts.web.app/",
+            "https://github.com/mdmahfujarrahman/ahmed-auto-parts",
+        live_link: "https://ahmed-auto-parts.vercel.app/",
     },
+    {
+        name: "QR Code Brew",
+        description:
+            "Discover the power of our free QR code generator online. Create dynamic QR codes for URL, Text, Vcard, Email, Wifi, and Twitter.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Redux Toolkit",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Server Side Rendering",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: qrcode,
+        live_link: "https://qrcodebrew.com/",
+    },
+    {
+        name: "Get Local IP",
+        description:
+            "Get your local IP address using this simple web application. It also provides information about your public IP address.",
+        tags: [
+            {
+                name: "Node.js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Express.js",
+                color: "green-text-gradient",
+            },
+            {
+                name: "MongoDB",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: nodejsapplication,
+        source_code_link:
+        "https://github.com/mdmahfujarrahman/seoextentionbackend",
+        live_link: "https://seoextentionbackend.vercel.app/api/v1/ipconfig",
+    },
+    
 ];
 
 export { services, technologies, experiences, testimonials, projects };

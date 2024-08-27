@@ -31,7 +31,16 @@ const Work = () => {
                 </motion.p>
             </div>
             <div className="mt-20 flex flex-col md:flex-row flex-warp gap-7">
-                {projects.map((project, index) => (
+                {projects.slice(0,3).map((project, index) => (
+                    <ProjectCard
+                        key={project.name}
+                        project={project}
+                        index={index}
+                    />
+                ))}
+            </div>
+            <div className="mt-20 flex flex-col md:flex-row flex-warp gap-7">
+                {projects.slice(3,6).map((project, index) => (
                     <ProjectCard
                         key={project.name}
                         project={project}
