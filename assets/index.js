@@ -31,6 +31,7 @@ import infyney from "./company/infyney.png";
 import kyloapps from "./company/kyloapps.png";
 import seopage1 from "./company/seopage1.jpeg";
 import tesla from "./company/tesla.png";
+import indetechs from "./indetechs.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -70,6 +71,7 @@ export {
     infyney,
     kyloapps,
     tesla,
+    indetechs,
     carrent,
     jobit,
     aspireprop,

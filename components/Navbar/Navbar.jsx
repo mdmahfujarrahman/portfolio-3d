@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+
 import { useCallback, useEffect, useRef, useState } from "react";
 
 import { styles } from "../../styles/styles";
@@ -34,8 +34,8 @@ const Navbar = () => {
                         window.scroll(0, 0);
                     }}
                 >
-                    <Image
-                        src={logo}
+                    <img
+                        src={logo.src}
                         alt="logo"
                         className="w-9 h-9 object-contain imageRounded"
                     />
@@ -73,8 +73,8 @@ const Navbar = () => {
                     onClick={handleClick}
                     className="sm:hidden flex flex-1 justify-end items-center"
                 >
-                    <Image
-                        src={toggle ? close : menu}
+                    <img
+                        src={toggle ? close.src : menu.src}
                         alt="menu"
                         className="w-[28px] h-[28px] cursor-pointer object-contain"
                         onClick={() => setToggle(!toggle)}

@@ -27,7 +27,8 @@ import {
     bootstrap,
     aspireprop,
     qrcode,
-    nodejsapplication
+    nodejsapplication,
+    indetechs
 } from "../../assets/index";
 
 export const navLinks = [
@@ -50,25 +51,25 @@ export const navLinks = [
     {
         id: "Download",
         title: "Download Resume",
-        link: "https://drive.google.com/file/d/1peyh2pJga0k1RiWH4fGFsQXHkcvTm4QD/view?usp=sharing",
+        link: "https://drive.google.com/file/d/1eBR0jNFSZbpkGmXOBuJzZTgUszNkOoXn/view?usp=sharing",
     },
 ];
 
 const services = [
     {
-        title: "Full Stack Developer",
+        title: "React.js Developer",
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "Next.js Developer",
         icon: mobile,
     },
     {
-        title: "Local SEO Specialist",
+        title: "Full Stack Developer",
         icon: backend,
     },
     {
-        title: "Content Creator",
+        title: "SaaS & Multi-Tenant",
         icon: creator,
     },
 ];
@@ -192,12 +193,26 @@ const experiences = [
         company_name: "SEOPAGE1",
         icon: seopage1,
         iconBg: "#E6DEDD",
-        date: "Feb 2024 - Present",
+        date: "Feb 2024 - Dec 2024",
         points: [
             "Developing and maintaining ERP software using React.js and other related technologies.",
             "Complete Few Important modules of the ERP software (Auto Price Quotation, Sale Risk Analysis etc).",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
+        ],
+    },
+    {
+        title: "Software Engineer",
+        company_name: "Indetechs Software Ltd.",
+        icon: indetechs,
+        iconBg: "#383E56",
+        date: "Dec 2024 - Present",
+        points: [
+            "Working on DPP (Digital Product Passport) platform for DigiProdPass in the UK.",
+            "Built multi-language localization with AI-assisted auto-translate flow.",
+            "Built DPP creation, editing, and viewing features with theme-driven customization.",
+            "Shipped full Product Library interface and Template Preview section.",
+            "Designed and shipped dynamic, theme-driven Public View for real customer rollouts.",
         ],
     },
 ];
@@ -362,6 +377,19 @@ const projects = [
         live_link: "https://seoextentionbackend.vercel.app/api/v1/ipconfig",
     },
     
+];
+
+export const socialLinks = [
+    {
+        name: "LinkedIn",
+        link: "https://www.linkedin.com/in/md-mahfujar-rahman",
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>`,
+    },
+    {
+        name: "GitHub",
+        link: "https://github.com/mdmahfujarrahman",
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>`,
+    },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
