@@ -20,9 +20,9 @@ const Banner = () => {
                         <span className="text-[#915eff]">Mahfujar Rahman</span>
                     </h1>
                     <p className="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 ">
-                        I'm a full stack web developer.{" "}
-                        <br className="sm:block hidden" /> I love to build Nice
-                        User Interfaces and web applications.
+                        I'm a Full Stack Engineer.{" "}
+                        <br className="sm:block hidden" /> I build web
+                        applications end to end, from the API to the interface.
                     </p>
                 </div>
             </div>

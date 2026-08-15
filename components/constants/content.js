@@ -57,19 +57,19 @@ export const navLinks = [
 
 const services = [
     {
-        title: "React.js Developer",
+        title: "Full Stack Engineer",
         icon: web,
     },
     {
-        title: "Next.js Developer",
-        icon: mobile,
-    },
-    {
-        title: "Full Stack Developer",
+        title: "Node.js & REST APIs",
         icon: backend,
     },
     {
-        title: "SaaS & Multi-Tenant",
+        title: "React & Next.js",
+        icon: mobile,
+    },
+    {
+        title: "Docker & Kubernetes",
         icon: creator,
     },
 ];
@@ -169,11 +169,12 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "Feb 2024 - Dec 2024",
         points: [
-            "Joined as Junior Frontend Developer and was promoted to Frontend Developer within six months.",
-            "Owned Sales Risk Policies — the ERP platform's largest feature — end to end against a Laravel backend.",
-            "Built the Employee Test Module: scheduling, scoring, fullscreen-on-start, and screenshot-based proctoring.",
-            "Cut single-task page load time from ~50s to ~15s by removing redundant API calls and dead code.",
-            "Added error boundaries, Puppeteer-based logging, and a design system to speed up feature work.",
+            "Core contributor to the company's in-house ERP platform, built on a PHP/Laravel backend and used daily by the whole company. Promoted from Junior within six months.",
+            "Owned the platform's largest module, a sales risk assessment system, end to end, working with the backend team on the endpoints and payloads behind it.",
+            "Cut a core page's load time from around 50 seconds to 15 by removing redundant API calls and dead code.",
+            "Built an online examination system used to assess employees: scheduling, difficulty levels, automatic scoring, fullscreen lock, and screenshot-based proctoring.",
+            "Delivered role-based dashboards, task checklist and review workflows, and an automated price quotation flow used by the sales team.",
+            "Added error tracking and logging, set up a shared design system, and built a browser extension that checks how a page responds across screen sizes.",
         ],
     },
     {
@@ -183,11 +184,12 @@ const experiences = [
         iconBg: "#383E56",
         date: "Dec 2024 - Present",
         points: [
-            "Building the DPP (Digital Product Passport) platform for DigiProdPass in the UK — a multi-tenant SaaS. Promoted from Jr. Software Engineer.",
-            "Led the move to a Clean Architecture and Turborepo monorepo, separating domain, use-case, and infrastructure layers.",
-            "Built the DPP CLI (v1 and v2) in Node.js to generate typed API integration layers — adopted by the whole team.",
-            "Designed and shipped a dynamic, theme-driven Public View with Next.js SSR, powering real customer rollouts (SBN, DFS).",
-            "Built multi-language localization across templates, sections, fields, and passports with an AI-assisted auto-translate flow.",
+            "Building a multi-tenant SaaS platform for a UK client, where each business customer gets their own branded workspace. Promoted from Jr. Software Engineer.",
+            "Take features from requirement to production: agree the API contract with the backend team, build both sides of it, test, release, and support it afterwards.",
+            "Built an internal command-line tool that generates the code our apps use to call backend services. A day of hand-written integration work became one command, and the whole team uses it daily.",
+            "Led the restructure to Clean Architecture in a monorepo, so business logic no longer depends on the API layer and swapping a data source stopped meaning a rewrite.",
+            "Designed a configuration-driven customer-facing site, so onboarding a new enterprise client with their own branding is a config change instead of a new build.",
+            "Shipped multi-language support across the product with AI-assisted translation, replacing a slow manual process.",
         ],
     },
 ];
