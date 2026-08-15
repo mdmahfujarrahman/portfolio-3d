@@ -54,7 +54,7 @@ export const navLinks = [
     {
         id: "Download",
         title: "Download Resume",
-        link: "https://drive.google.com/file/d/1eBR0jNFSZbpkGmXOBuJzZTgUszNkOoXn/view?usp=sharing",
+        link: "/Mahfujar_Rahman_Resume.pdf",
     },
 ];
 

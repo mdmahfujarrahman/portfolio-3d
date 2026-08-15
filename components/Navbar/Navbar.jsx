@@ -59,6 +59,7 @@ const Navbar = () => {
                                     href={`${link?.link}`}
                                     target="_blank"
                                     rel="noreferrer"
+                                    download
                                 >
                                     {link.title}
                                 </a>
@@ -100,7 +101,9 @@ const Navbar = () => {
                                 >
                                     {link?.id === "Download" ? (
                                         <a
-                                            href={'../../assets/Mahfujar Rahman Resume - Full Stack Developer.pdf'}
+                                            href={`${link?.link}`}
+                                            target="_blank"
+                                            rel="noreferrer"
                                             download
                                         >
                                             {link.title}
