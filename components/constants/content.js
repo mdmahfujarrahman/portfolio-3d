@@ -28,7 +28,10 @@ import {
     qrcode,
     nodejsapplication,
     indetechs,
-    website
+    website,
+    homelab,
+    polashbari,
+    uniapi
 } from "../../assets/index";
 
 export const navLinks = [
@@ -217,7 +220,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: website,
+        image: homelab,
         source_code_link: "https://github.com/mdmahfujarrahman/home-lab",
     },
     {
@@ -238,8 +241,30 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: website,
+        image: polashbari,
         live_link: "https://amaderpolashbari.mdmahfujarrahman.com",
+    },
+    {
+        name: "University Management API",
+        description:
+            "A REST API for running a university's academic records: students, faculty, admins, semesters, and departments. Each module keeps its own route, validation, controller, service, and model, so business logic stays separate from HTTP handling.",
+        tags: [
+            {
+                name: "node.js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "express + typescript",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongoose",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: uniapi,
+        source_code_link:
+            "https://github.com/mdmahfujarrahman/university-management-auth-services",
     },
     {
         name: "Aspire Proptech",
@@ -261,72 +286,6 @@ const projects = [
         ],
         image: aspireprop,
         live_link: "https://aspireprop.com/",
-    },
-    {
-        name: "Mega Grain Trading",
-        description:
-            "It is a B2B platform where trading trading facility that introduces buyers and sellers globally to perform business operations in Agri commodities.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "green-text-gradient",
-            },
-            {
-                name: "redux",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: carrent,
-        live_link: "https://megagrain-frontend.vercel.app/",
-    },
-    {
-        name: "NFT Marketplace",
-        description:
-            "Web application that allows users to buy and sell NFTs. Users can also create their own NFTs and sell them on the platform.",
-        tags: [
-            {
-                name: "Nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "solidity",
-                color: "green-text-gradient",
-            },
-            {
-                name: "tailwind",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: tripguides,
-        source_code_link: "https://github.com/mdmahfujarrahman/nft-project",
-        live_link: "https://nft-project-liart.vercel.app/",
-    },
-    {
-        name: "Ahmed Auto Parts",
-        description:
-            "Web-based platform that allows users to search for auto parts, view estimated prices for parts, and locate available parts based on their current location.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "green-text-gradient",
-            },
-            {
-                name: "tailwind",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: jobit,
-        source_code_link:
-            "https://github.com/mdmahfujarrahman/ahmed-auto-parts",
-        live_link: "https://ahmed-auto-parts.vercel.app/",
     },
     {
         name: "QR Code Brew",

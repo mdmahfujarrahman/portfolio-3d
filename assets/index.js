@@ -39,6 +39,9 @@ import tripguides from "./tripguide.png";
 import aspireprop from "./aspireprop.png";
 import qrcode from "./qrcode.png";
 import nodejsapplication from "./nodejsapplication.png";
+import homelab from "./homelab.png";
+import polashbari from "./polashbari.png";
+import uniapi from "./uniapi.png";
 
 export {
     logo,
@@ -76,6 +79,9 @@ export {
     jobit,
     aspireprop,
     nodejsapplication,
+    homelab,
+    polashbari,
+    uniapi,
     qrcode,
     tripguides,
     seopage1

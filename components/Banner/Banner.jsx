@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
 
 import { ComputersCanvas } from "../constants";
+import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
+import useWebGL from "../ErrorBoundary/useWebGL";
 
 const Banner = () => {
+    const webgl = useWebGL();
+
     return (
         <section className="relative w-full h-screen mx-auto">
             <div
@@ -27,7 +31,11 @@ const Banner = () => {
                 </div>
             </div>
             <span className="mb-10"></span>
-            <ComputersCanvas />
+            {webgl === true && (
+                <ErrorBoundary>
+                    <ComputersCanvas />
+                </ErrorBoundary>
+            )}
 
             <div className="absolute xs:bottom-10 bottom-32 w-full flexCenter">
                 <a href="#about">

@@ -12,11 +12,11 @@ import CanvasLoader from "../../UI/Loader/Loader";
 
 const Ball = (props) => {
     const [decal] = useTexture([props.imgUrl.src]);
+    // Lights live on the Canvas, not here. One pair per ball meant fifteen of
+    // each in the grid, and the light stacked up until every ball washed out.
     return (
         <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-            <ambientLight intensity={0.25} />
-            <directionalLight position={[0, 0, 0.05]} />
-            <mesh castShadow receiveShadow scale={2.75}>
+            <mesh castShadow receiveShadow scale={1.5}>
                 <icosahedronGeometry args={[1, 1]} />
                 <meshStandardMaterial
                     color="#fff8eb"

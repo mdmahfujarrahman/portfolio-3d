@@ -4,12 +4,15 @@ import { motion } from "framer-motion";
 import { slideIn } from "@/styles/Motion";
 import SectionWrapper from "../../HOC/SectionWrapper";
 import EarthCanvas from "../Earth/Earth";
+import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
+import useWebGL from "../ErrorBoundary/useWebGL";
 import { socialLinks } from "../constants/content";
 
 import axios from "axios";
 import { toast } from "react-hot-toast";
 
 const Contact = () => {
+    const webgl = useWebGL();
     const formRef = useRef();
     const [form, setForm] = useState({
         name: "",
@@ -146,12 +149,16 @@ const Contact = () => {
         </div>
       </motion.div>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-      >
-        <EarthCanvas />
-      </motion.div>
+      {webgl === true && (
+        <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        >
+          <ErrorBoundary>
+            <EarthCanvas />
+          </ErrorBoundary>
+        </motion.div>
+      )}
     </div>
   );
 };
