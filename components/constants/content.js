@@ -25,12 +25,13 @@ import {
     tripguides,
     bootstrap,
     aspireprop,
-    nodejsapplication,
     indetechs,
     website,
     homelab,
     polashbari,
-    uniapi
+    uniapi,
+    libloc,
+    foodapp
 } from "../../assets/index";
 
 export const navLinks = [
@@ -266,6 +267,49 @@ const projects = [
             "https://github.com/mdmahfujarrahman/university-management-auth-services",
     },
     {
+        name: "lib-dynamic-localization",
+        description:
+            "A translation package for React apps that render on both the server and the client. One API covers a provider, a client hook, a server helper, and runtime language switching, so a page does not need two different i18n setups. Bundled with tsup and published through a GitHub Actions workflow.",
+        tags: [
+            {
+                name: "typescript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "react + i18next",
+                color: "green-text-gradient",
+            },
+            {
+                name: "npm package",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: libloc,
+        source_code_link:
+            "https://github.com/mdmahfujarrahman/lib-dynamic-localization",
+    },
+    {
+        name: "Food Ordering App",
+        description:
+            "A React Native app built with Expo: sign-in and sign-up, tabbed navigation across home, search, cart, and profile, and Appwrite for auth and data. Styled with NativeWind and wired up to Sentry for crash reporting.",
+        tags: [
+            {
+                name: "react native",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "expo router",
+                color: "green-text-gradient",
+            },
+            {
+                name: "appwrite",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: foodapp,
+        source_code_link: "https://github.com/mdmahfujarrahman/native-food-app",
+    },
+    {
         name: "Aspire Proptech",
         description:
             "Aspire Proptech is a one-stop destination for people seeking their dream home in Bangalore. It is a platform that connects buyers and sellers of real estate properties.",
@@ -285,29 +329,6 @@ const projects = [
         ],
         image: aspireprop,
         live_link: "https://aspireprop.com/",
-    },
-    {
-        name: "Get Local IP",
-        description:
-            "Get your local IP address using this simple web application. It also provides information about your public IP address.",
-        tags: [
-            {
-                name: "Node.js",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Express.js",
-                color: "green-text-gradient",
-            },
-            {
-                name: "MongoDB",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: nodejsapplication,
-        source_code_link:
-        "https://github.com/mdmahfujarrahman/seoextentionbackend",
-        live_link: "https://seoextentionbackend.vercel.app/api/v1/ipconfig",
     },
     
 ];

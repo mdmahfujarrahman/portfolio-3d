@@ -42,6 +42,8 @@ import nodejsapplication from "./nodejsapplication.png";
 import homelab from "./homelab.png";
 import polashbari from "./polashbari.png";
 import uniapi from "./uniapi.png";
+import libloc from "./libloc.png";
+import foodapp from "./foodapp.png";
 
 export {
     logo,
@@ -82,6 +84,8 @@ export {
     homelab,
     polashbari,
     uniapi,
+    libloc,
+    foodapp,
     qrcode,
     tripguides,
     seopage1
