@@ -25,7 +25,6 @@ import {
     tripguides,
     bootstrap,
     aspireprop,
-    qrcode,
     nodejsapplication,
     indetechs,
     website,
@@ -286,27 +285,6 @@ const projects = [
         ],
         image: aspireprop,
         live_link: "https://aspireprop.com/",
-    },
-    {
-        name: "QR Code Brew",
-        description:
-            "Discover the power of our free QR code generator online. Create dynamic QR codes for URL, Text, Vcard, Email, Wifi, and Twitter.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Redux Toolkit",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Server Side Rendering",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: qrcode,
-        live_link: "https://qrcodebrew.com/",
     },
     {
         name: "Get Local IP",
