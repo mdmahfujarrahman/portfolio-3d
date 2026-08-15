@@ -23,18 +23,20 @@ const ProjectCard = ({ project, index }) => {
                     />
 
                     <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-                        <div
-                            onClick={() =>
-                                window.open(project.live_link, "_blank")
-                            }
-                            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-1"
-                        >
-                            <img
-                                src={website.src}
-                                alt="Live Link"
-                                className="w-1/2 h-1/2 object-contain"
-                            />
-                        </div>
+                        {project.live_link && (
+                            <div
+                                onClick={() =>
+                                    window.open(project.live_link, "_blank")
+                                }
+                                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-1"
+                            >
+                                <img
+                                    src={website.src}
+                                    alt="Live Link"
+                                    className="w-1/2 h-1/2 object-contain"
+                                />
+                            </div>
+                        )}
                         {project.source_code_link && (
                             <div
                                 onClick={() =>

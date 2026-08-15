@@ -78,7 +78,9 @@ const Home = () => {
         <Banner />
       </div>
       <About />
+      <Tech />
       <Experience />
+      <Work />
       <div className="relative z-0">
         <Contact />
       </div>
