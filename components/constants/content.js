@@ -17,7 +17,6 @@ import {
     sonarqube,
     nextjs,
     reactNative,
-    localSEO,
     infyney,
     kyloapps,
     seopage1,
@@ -28,7 +27,8 @@ import {
     aspireprop,
     qrcode,
     nodejsapplication,
-    indetechs
+    indetechs,
+    website
 } from "../../assets/index";
 
 export const navLinks = [
@@ -139,66 +139,41 @@ const technologies = [
 
 const experiences = [
     {
-        title: "Local SEO Specialist",
-        company_name: "Local SEO Help, Fivarr, Upwork",
-        icon: localSEO,
-        iconBg: "#383E56",
-        date: "March 2016 - Present",
-        points: [
-            "Help clients to rank their business on google map pack and organic search result.",
-            "Improving the quality of the website and content to rank on google.",
-            "Helping clients to get more reviews on google.",
-            "Helping clients to get more backlinks from high authority websites.",
-        ],
-    },
-    {
         title: "Full Stack Developer - Internship",
         company_name: "Infyney",
         icon: infyney,
         iconBg: "#E6DEDD",
         date: "Jun 2022 - Jul 2022",
         points: [
-            "Work on keycloak authentication and authorization.",
-            "Authentication and authorization using keycloak.",
-            "Explore keycloak and its features.",
+            "Implemented authentication and authorization flows with Keycloak.",
+            "Explored Keycloak realms, clients, and role mapping for a multi-app setup.",
         ],
     },
     {
-        title: "Full Stack Developer - Internship",
-        company_name: "KyloApps",
-        icon: kyloapps,
-        iconBg: "#383E56",
-        date: "Jul 2022 - Nov 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-        ],
-    },
-    {
-        title: "Full Stack Developer",
+        title: "SDE-I",
         company_name: "KyloApps",
         icon: kyloapps,
         iconBg: "#E6DEDD",
-        date: "Dec 2022 - Nov 2023",
+        date: "Dec 2022 - Dec 2023",
         points: [
-            "Developing and maintaining web applications using React.js, Next.js and other related technologies.",
-            "Meeting both technical and consumer needs.",
-            "Motivating team members and assessing performance.",
-            "Building high-quality reusable code that can be used in the future.",
+            "Built full stack features across Node.js, Express, MongoDB, React, and Next.js — REST endpoints, data models, and the UI on top of them.",
+            "Integrated multiple payment gateways (including Razorpay) with server-side order creation, signature verification, and webhook handling.",
+            "Delivered 5+ projects and supported 10+ others, and set up workflows for the team.",
+            "Mentored interns and cleared blockers to keep projects on schedule.",
         ],
     },
     {
-        title: "Jr. Frontend Developer",
+        title: "Frontend Developer",
         company_name: "SEOPAGE1",
         icon: seopage1,
         iconBg: "#E6DEDD",
         date: "Feb 2024 - Dec 2024",
         points: [
-            "Developing and maintaining ERP software using React.js and other related technologies.",
-            "Complete Few Important modules of the ERP software (Auto Price Quotation, Sale Risk Analysis etc).",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Joined as Junior Frontend Developer and was promoted to Frontend Developer within six months.",
+            "Owned Sales Risk Policies — the ERP platform's largest feature — end to end against a Laravel backend.",
+            "Built the Employee Test Module: scheduling, scoring, fullscreen-on-start, and screenshot-based proctoring.",
+            "Cut single-task page load time from ~50s to ~15s by removing redundant API calls and dead code.",
+            "Added error boundaries, Puppeteer-based logging, and a design system to speed up feature work.",
         ],
     },
     {
@@ -208,43 +183,62 @@ const experiences = [
         iconBg: "#383E56",
         date: "Dec 2024 - Present",
         points: [
-            "Working on DPP (Digital Product Passport) platform for DigiProdPass in the UK.",
-            "Built multi-language localization with AI-assisted auto-translate flow.",
-            "Built DPP creation, editing, and viewing features with theme-driven customization.",
-            "Shipped full Product Library interface and Template Preview section.",
-            "Designed and shipped dynamic, theme-driven Public View for real customer rollouts.",
+            "Building the DPP (Digital Product Passport) platform for DigiProdPass in the UK — a multi-tenant SaaS. Promoted from Jr. Software Engineer.",
+            "Led the move to a Clean Architecture and Turborepo monorepo, separating domain, use-case, and infrastructure layers.",
+            "Built the DPP CLI (v1 and v2) in Node.js to generate typed API integration layers — adopted by the whole team.",
+            "Designed and shipped a dynamic, theme-driven Public View with Next.js SSR, powering real customer rollouts (SBN, DFS).",
+            "Built multi-language localization across templates, sections, fields, and passports with an AI-assisted auto-translate flow.",
         ],
     },
 ];
 
-const testimonials = [
-    {
-        testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-];
+// Placeholder testimonials removed — the Feedbacks section stays empty until
+// there are real ones to show.
+const testimonials = [];
 
 const projects = [
+    {
+        name: "home-lab (k3s cluster)",
+        description:
+            "Kubernetes manifests for the single-node k3s cluster I self-host. Traefik ingress, MetalLB in L2 mode, NFS and local-path storage, Prometheus/Grafana monitoring, and self-hosted apps. Secrets are kept out of git.",
+        tags: [
+            {
+                name: "kubernetes",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "docker",
+                color: "green-text-gradient",
+            },
+            {
+                name: "traefik",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: website,
+        source_code_link: "https://github.com/mdmahfujarrahman/home-lab",
+    },
+    {
+        name: "Amader Polashbari",
+        description:
+            "A community site for Polashbari, built with Astro and SQLite and running on my own k3s cluster. Containerized, deployed behind Traefik with its own persistent volumes.",
+        tags: [
+            {
+                name: "astro",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "drizzle orm",
+                color: "green-text-gradient",
+            },
+            {
+                name: "kubernetes",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: website,
+        live_link: "https://amaderpolashbari.mdmahfujarrahman.com",
+    },
     {
         name: "Aspire Proptech",
         description:
