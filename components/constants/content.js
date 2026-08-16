@@ -51,11 +51,6 @@ export const navLinks = [
         id: "contact",
         title: "Contact",
     },
-    {
-        id: "Download",
-        title: "Download Resume",
-        link: "/Mahfujar_Rahman_Resume.pdf",
-    },
 ];
 
 const services = [
@@ -153,11 +148,11 @@ const experiences = [
         ],
     },
     {
-        title: "SDE-I",
+        title: "SDE-I (joined as an intern)",
         company_name: "KyloApps",
         icon: kyloapps,
         iconBg: "#E6DEDD",
-        date: "Dec 2022 - Dec 2023",
+        date: "Jul 2022 - Oct 2023",
         points: [
             "Built full stack features across Node.js, Express, MongoDB, React, and Next.js — REST endpoints, data models, and the UI on top of them.",
             "Integrated multiple payment gateways (including Razorpay) with server-side order creation, signature verification, and webhook handling.",

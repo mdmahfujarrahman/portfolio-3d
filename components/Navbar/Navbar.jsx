@@ -54,18 +54,7 @@ const Navbar = () => {
                             } hover:text-white text-[18px] font-medium cursor-pointer`}
                             onClick={() => setActive(link.title)}
                         >
-                            {link?.id === "Download" ? (
-                                <a
-                                    href={`${link?.link}`}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    download
-                                >
-                                    {link.title}
-                                </a>
-                            ) : (
-                                <a href={`#${link.id}`}>{link.title}</a>
-                            )}
+                            <a href={`#${link.id}`}>{link.title}</a>
                         </li>
                     ))}
                 </ul>
@@ -99,18 +88,7 @@ const Navbar = () => {
                                         setToggle(!toggle);
                                     }}
                                 >
-                                    {link?.id === "Download" ? (
-                                        <a
-                                            href={`${link?.link}`}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            download
-                                        >
-                                            {link.title}
-                                        </a>
-                                    ) : (
-                                        <a href={`#${link.id}`}>{link.title}</a>
-                                    )}
+                                    <a href={`#${link.id}`}>{link.title}</a>
                                 </li>
                             ))}
                         </ul>
