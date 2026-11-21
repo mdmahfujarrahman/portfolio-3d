@@ -55,20 +55,20 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Full Stack Engineer",
+        title: "Full-Stack Web Apps",
         icon: web,
     },
     {
-        title: "Node.js & REST APIs",
+        title: "System Design & APIs",
         icon: backend,
     },
     {
-        title: "React & Next.js",
-        icon: mobile,
+        title: "Infrastructure & Automation",
+        icon: creator,
     },
     {
-        title: "Docker & Kubernetes",
-        icon: creator,
+        title: "Performance & Real-Time Tracking",
+        icon: mobile,
     },
 ];
 
@@ -200,7 +200,7 @@ const projects = [
     {
         name: "home-lab (k3s cluster)",
         description:
-            "Kubernetes manifests for the single-node k3s cluster I self-host. Traefik ingress, MetalLB in L2 mode, NFS and local-path storage, Prometheus/Grafana monitoring, and self-hosted apps. Secrets are kept out of git.",
+            "Self-hosted infrastructure on single-node k3s. Runs multi-tenant ingress, persistent storage, monitoring stack, and production apps at home—no vendor, no surprises.",
         tags: [
             {
                 name: "kubernetes",
@@ -221,7 +221,7 @@ const projects = [
     {
         name: "Amader Polashbari",
         description:
-            "A community site for Polashbari, built with Astro and SQLite and running on my own k3s cluster. Containerized, deployed behind Traefik with its own persistent volumes.",
+            "Community site for a village: publish events, track attendance, keep members connected. Live on my k3s cluster—pages load fast, data persists, no middleman.",
         tags: [
             {
                 name: "astro",
@@ -242,7 +242,7 @@ const projects = [
     {
         name: "University Management API",
         description:
-            "A REST API for running a university's academic records: students, faculty, admins, semesters, and departments. Each module keeps its own route, validation, controller, service, and model, so business logic stays separate from HTTP handling.",
+            "REST API for academic records: enroll students, track courses, manage roles. Modular structure keeps business logic separate from HTTP—swap databases without touching business code.",
         tags: [
             {
                 name: "node.js",
@@ -264,7 +264,7 @@ const projects = [
     {
         name: "lib-dynamic-localization",
         description:
-            "A translation package for React apps that render on both the server and the client. One API covers a provider, a client hook, a server helper, and runtime language switching, so a page does not need two different i18n setups. Bundled with tsup and published through a GitHub Actions workflow.",
+            "Translation library for React apps that render both server and client. One API, one provider—language switches at runtime without rebuilds. Published as npm package.",
         tags: [
             {
                 name: "typescript",
@@ -286,7 +286,7 @@ const projects = [
     {
         name: "Food Ordering App",
         description:
-            "A React Native app built with Expo: sign-in and sign-up, tabbed navigation across home, search, cart, and profile, and Appwrite for auth and data. Styled with NativeWind and wired up to Sentry for crash reporting.",
+            "Mobile app for browsing menus, managing a cart, and placing orders. Auth, real-time data, and crash reporting from day one—not bolted on later.",
         tags: [
             {
                 name: "react native",
@@ -307,7 +307,7 @@ const projects = [
     {
         name: "Aspire Proptech",
         description:
-            "Aspire Proptech is a one-stop destination for people seeking their dream home in Bangalore. It is a platform that connects buyers and sellers of real estate properties.",
+            "Real estate marketplace connecting buyers and sellers in Bangalore. Search, filter, and contact verified listings—built for speed and conversion.",
         tags: [
             {
                 name: "react",
